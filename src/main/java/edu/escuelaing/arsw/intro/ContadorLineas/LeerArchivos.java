@@ -23,7 +23,7 @@ public class LeerArchivos {
         } catch (IOException x) {
             System.err.format("IOException: %s%n", x);
         }
-		System.out.println("Physical Lines: " + cont.getContarLineas());
+		
 	}
 
 }

@@ -1,12 +1,21 @@
 package edu.escuelaing.arsw.intro.ContadorLineas;
 
 public class LOCContadorLineas implements ContadorLineas{
+	
+	private int contadorInvalido = 0;
+	private int contadorValido = 0;
+	
 	@Override
-	public void Conteo(String line) {
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-	}
+	public void Conteo(String linea) {
+		
+		linea = linea.trim();
+		contadorValido++;
+		if (linea.equals("") || linea.charAt(0) == '/' || linea.charAt(0) == '*') {
+			contadorInvalido++;
+		}
+	}	
 	@Override
     public int getContarLineas() {
-		throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+		return contadorValido-contadorInvalido;
 	}    
 }

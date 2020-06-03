@@ -1,8 +1,8 @@
 package edu.escuelaing.arsw.intro;
 
-import edu.escuelaing.arsw.intro.ContadorLineas.ContadorLineas;
-import edu.escuelaing.arsw.intro.ContadorLineas.ContarLineasArchivo;
-import edu.escuelaing.arsw.intro.ContadorLineas.LeerArchivos;
+//import edu.escuelaing.arsw.intro.ContadorLineas.ContadorLineas;
+//import edu.escuelaing.arsw.intro.ContadorLineas.ContarLineasArchivo;
+//import edu.escuelaing.arsw.intro.ContadorLineas.LeerArchivos;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -34,12 +34,17 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp(){
-    	String ruta = "src/test/resources/App.java";
-        LeerArchivos archivo= new LeerArchivos();
-        ContadorLineas contador = new ContarLineasArchivo();        
-        archivo.leerArch(ruta, contador);
-        
-        assertTrue( 16 == contador.getContarLineas());
+    public void testAppPHY(){
+    	String[] ruta = {"phy","src/test/resources/App.java"};
+        App.main(ruta);
+        int contador = App.getContador();
+        assertTrue( 31 == contador);
+    }
+    
+    public void testLOC(){
+    	String[] ruta = {"loc","src/test/resources/App.java"};
+        App.main(ruta);
+        int contador = App.getContador();
+        assertTrue( 25 == contador);
     }
 }
