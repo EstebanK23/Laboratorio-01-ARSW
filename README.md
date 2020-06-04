@@ -22,21 +22,21 @@ Este proyecto se construyo utilizando el lenguaje de Java, el editor Eclipse Jav
 
 Lo primero que se debe realizar para el uso de LOC Couting es la descarga de un editor (IntelliJ Idea, Eclipse, BlueJ, etc) Esto es opcional, solo en caso de tener la necesidad de editar el proyecto. 
 
-Imagen Eclipse
+![Eclipse](https://user-images.githubusercontent.com/54051399/83717715-0ce51180-a5f9-11ea-9115-289c17ce2834.PNG)
 
 [Toca acá para ver la Descarga e instalación del editor Eclipse](https://www.youtube.com/watch?v=j8ngvGNFXKA&t=311s)
 
 Cuando ya tengas tu editor el siguiente paso seras descargar la version más reciente de Maven y el JDK de la version 8 de java ya que esta version es compatible con el proyecto.
 
-Imagen JDK
+![JDK](https://user-images.githubusercontent.com/54051399/83717739-1a9a9700-a5f9-11ea-97ad-1b17dc37d5fa.PNG)
 
-Imagen maven
+![Maven](https://user-images.githubusercontent.com/54051399/83717759-27b78600-a5f9-11ea-9fdb-1de8409a9283.PNG)
 
 [Toca acá para ver la Descarga de Maven y la configuración del JDK y Maven](https://www.youtube.com/watch?v=ExOl1qkYGiI&t=238s)
 
 Por ultimo deberas descargar GIT para poder obtener el proyecto desde este repositorio.
 
-Imagen de GIT
+![Git](https://user-images.githubusercontent.com/54051399/83717783-330ab180-a5f9-11ea-948f-1c9f420f91ae.PNG)
 
 [Toca acá para ver la Descarga e instalación de GIT](https://www.youtube.com/watch?v=ES2xtLyI-B8)
 
@@ -44,9 +44,13 @@ Esto es todo lo que tienes que realizar para probar LOC Couting en tu ordenador.
 
 ## Licencia
 
+La licencia utilizada para este proyecto es GPL-3.0 la cual se encuentra especificada en el siguiente enlace
+
+[Licencia](https://github.com/EstebanK23/Laboratorio-01-ARSW/blob/master/LICENSE.txt)
+
 ## Diseño
 
-Imagen Astah
+![Modelo Astah](https://user-images.githubusercontent.com/54051399/83717815-46b61800-a5f9-11ea-8c19-859f2a1694b6.jpeg)
 
 ### Descripción del diseño
 
@@ -62,53 +66,59 @@ Lo primero que deberas hacer es abrir la terminal de tu ordenador (CMD) y obtene
 
 Para obtener el proyecto deberas clonarlo desde git, el cual ya debe estar instalado como se menciono anteriormente, para esto se usara el siguiente comando en la terminal.
 
-Imagen git clone
+![git clone](https://user-images.githubusercontent.com/54051399/83717843-559cca80-a5f9-11ea-92df-c8b7d7f74c14.PNG)
 
 El paso siguiente es compilar el proyecto haciendo uso del siguiente comando de Maven.
 
-Imagen mvn package
+![mvn package](https://user-images.githubusercontent.com/54051399/83717865-5fbec900-a5f9-11ea-863a-a6ae3bef4861.PNG)
 
 Al realizar este comando podremos ver los siguente
 
-Imagen test
+![mvn package 2](https://user-images.githubusercontent.com/54051399/83717881-6b11f480-a5f9-11ea-9311-38c3f95677df.PNG)
+
+![mvn package 3](https://user-images.githubusercontent.com/54051399/83717898-736a2f80-a5f9-11ea-9dfd-a21d40f86c13.PNG)
 
 Por ultimo para realizar la prueba existe el siguiente comando.
 
 Para el caso de PHY
 
-Imagen PHY
+![PHY archivo](https://user-images.githubusercontent.com/54051399/83717988-b6c49e00-a5f9-11ea-9e34-d192e6047f97.PNG)
 
 Para el caso de LOC
 
-Se muestran dos ejemplos cuando se pasa la dirccion de una carpeta.
+![LOC archivo](https://user-images.githubusercontent.com/54051399/83717931-909efe00-a5f9-11ea-84b6-b7b514ca187b.PNG)
 
-Imagen carpeta PHY
+Se muestran dos ejemplos cuando se pasa la direccion de una carpeta.
 
-Imagen carpeta LOC
+![PHY](https://user-images.githubusercontent.com/54051399/83717963-a6acbe80-a5f9-11ea-979e-8a594bdb4cb3.PNG)
+
+![LOC](https://user-images.githubusercontent.com/54051399/83717946-9ac0fc80-a5f9-11ea-8b1d-e0e825afa80b.PNG)
 
 ## Ejecución de pruebas
 
 Para dar inicio a la ejecucion de pruebas se utilizara el siguiente comando de Maven.
 
-Imagen mvn test
+![mvn test](https://user-images.githubusercontent.com/54051399/83718023-cb089b00-a5f9-11ea-98c6-99aa15e62285.PNG)
 
 Se muestra la ejecución de pruebas correctamente
 
-Imagen2 mvn test
+![mvn test 2](https://user-images.githubusercontent.com/54051399/83718049-d956b700-a5f9-11ea-9a2f-f46cb6118afa.PNG)
 
 Se muestran algunos ejemplos de la ejecución de 12 pruebas donde se evidencia el funcionamiento de la siguiente manera.
 
   - Lectura de archivos y carpetas
   
-  Imagen 1
+  ![Ejemplo archivo](https://user-images.githubusercontent.com/54051399/83718106-00ad8400-a5fa-11ea-93e9-2e2121e8c8a3.PNG)
   
   - Conteo de archivos de manera PHY
   
-  Imagen 2
+  ![Ejemplo phy paquete](https://user-images.githubusercontent.com/54051399/83718133-1327bd80-a5fa-11ea-8a0e-11cd59d2d71c.PNG)
   
   - Conteo de archivos de manera LOC
   
-  Imagen 3
+  ![Ejemplo loc paquete](https://user-images.githubusercontent.com/54051399/83718118-0905bf00-a5fa-11ea-8a8d-fb9e18526ea4.PNG)
+  
+Por ultimo se muestra la validación de todas las pruebas desde el editor Eclipse.
 
-Imagen de pruebas
+![pruebas](https://user-images.githubusercontent.com/54051399/83718160-233f9d00-a5fa-11ea-91bb-34a94f65a45e.PNG)
 
