@@ -8,7 +8,7 @@ import edu.escuelaing.arsw.intro.ContadorLineas.LeerArchivos;
 
 public class App {
 	
-	private static int contadorFinal=0;
+	public static int ContadorFinal=0;
 	
 	public static void main( String[] args ){
 		String ruta = args[1];
@@ -20,12 +20,11 @@ public class App {
         else if (args[0].equals("loc")){
         	contador = new LOCContadorLineas();
         }     
-        archivo.leerArch(ruta, contador);
-        System.out.println("Physical Lines: " + contador.getContarLineas());
-        contadorFinal = contador.getContarLineas();
+        archivo.leerCarp(ruta, contador);
+        ContadorFinal=contador.getContarLineas();   
     }
 	
 	public static int getContador() {
-		return contadorFinal;
+		return ContadorFinal;
 	}
 }
