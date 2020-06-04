@@ -15,8 +15,13 @@ public class LeerArchivos {
 	public LeerArchivos() {}
 	public ArrayList<Integer> ListaContadores = new ArrayList<Integer>(Collections.nCopies(1, 0));
 	
-
-	
+	/**
+	 * El metodo leerCarp es el encargado de leer todos los archivos de una carpeta
+	 * ya que si se desea se puede y pasarlos a realizar el conteo de lineas
+	 * 
+	 * @param direccion es la ruta para la carpeta que se va a leer
+	 * @param cont es el contador que llevara la suma de la cantidad de lineas de los archivos
+	 **/
 	public  void leerCarp(String direccion, ContadorLineas cont) {
 
 
@@ -45,7 +50,12 @@ public class LeerArchivos {
 		
 	}
 	
-	
+	/**
+	 * El metodo leerArch es el encargado de leer el archivo para hacer el conteo de lineas
+	 * 
+	 * @param RutaAcceso es la ruta para el archivo que se va a leer
+	 * @param cont es el contador que llevara la suma de la cantidad de lineas del archivo
+	 **/
 	public  void leerArch(String RutaAcceso, ContadorLineas cont) {
 		Charset caracter = Charset.forName("UTF-8");
 		Path archivo = Paths.get(RutaAcceso);
@@ -53,7 +63,7 @@ public class LeerArchivos {
 		try (BufferedReader lector = Files.newBufferedReader(archivo, caracter)) {
             String linea = null;
             while ((linea = lector.readLine()) != null) {
-                System.out.println(linea);
+                //System.out.println(linea);
                 cont.Conteo(linea);
             }
             ListaContadores.add(cont.getContarLineas());
